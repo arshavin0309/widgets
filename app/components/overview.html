@@ -1,0 +1,671 @@
+<section id="overview">
+    <div class="container">
+        <h2>Обзор рынка</h2>
+
+        <div class="widget-container">
+            <div class="widget-box">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+                        {
+                            "colorTheme": "light",
+                                "dateRange": "12M",
+                                    "locale": "ru",
+                                        "largeChartUrl": "",
+                                            "isTransparent": false,
+                                                "showFloatingTooltip": false,
+                                                    "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+                                                        "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+                                                            "gridLineColor": "rgba(240, 243, 250, 0)",
+                                                                "scaleFontColor": "#0F0F0F",
+                                                                    "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+                                                                        "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+                                                                            "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+                                                                                "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+                                                                                    "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
+                                                                                        "tabs": [
+                                                                                            {
+                                                                                                "title": "Металлы",
+                                                                                                "symbols": [
+                                                                                                    {
+                                                                                                        "s": "CAPITALCOM:GOLD",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "metal/gold",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "TVC:SILVER",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "metal/silver",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "NASDAQ:COOP",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "mr-cooper-group",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "PEPPERSTONE:ALUMINIUM",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "metal/aluminum",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "CAPITALCOM:PLATINUM",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "metal/platinum",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    }
+                                                                                                ],
+                                                                                                "originalTitle": "Indices"
+                                                                                            },
+                                                                                            {
+                                                                                                "title": "Энергоносители",
+                                                                                                "symbols": [
+                                                                                                    {
+                                                                                                        "s": "BLACKBULL:BRENT",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "crude-oil",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "BLACKBULL:WTI",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "crude-oil",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "PEPPERSTONE:NATGAS",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "natural-gas",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    }
+                                                                                                ],
+                                                                                                "originalTitle": "Futures"
+                                                                                            },
+                                                                                            {
+                                                                                                "title": "Форекс",
+                                                                                                "symbols": [
+                                                                                                    {
+                                                                                                        "s": "OANDA:GBPUSD",
+                                                                                                        "d": "",
+                                                                                                        "base-currency-logoid": "country/GB",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "OANDA:AUDUSD",
+                                                                                                        "d": "",
+                                                                                                        "base-currency-logoid": "country/AU",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "OANDA:EURCHF",
+                                                                                                        "d": "",
+                                                                                                        "base-currency-logoid": "country/EU",
+                                                                                                        "currency-logoid": "country/CH"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "OANDA:EURUSD",
+                                                                                                        "d": "",
+                                                                                                        "base-currency-logoid": "country/EU",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "OANDA:USDJPY",
+                                                                                                        "d": "",
+                                                                                                        "base-currency-logoid": "country/US",
+                                                                                                        "currency-logoid": "country/JP"
+                                                                                                    }
+                                                                                                ],
+                                                                                                "originalTitle": "Forex"
+                                                                                            },
+                                                                                            {
+                                                                                                "title": "Акции США",
+                                                                                                "symbols": [
+                                                                                                    {
+                                                                                                        "s": "NYSE:BA",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "boeing",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "NYSE:CVX",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "chevron",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "NYSE:XOM",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "exxon",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "VIE:FORD",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "ford",
+                                                                                                        "currency-logoid": "country/EU"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "NASDAQ:TSLA",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "tesla",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        ],
+                                                                                            "support_host": "https://www.tradingview.com",
+                                                                                                "backgroundColor": "#0f0f0f",
+                                                                                                    "width": "100%",
+                                                                                                        "height": "100%",
+                                                                                                            "showSymbolLogo": true,
+                                                                                                                "showChart": true
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+
+            <div class="widget-box">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+                        {
+                            "colorTheme": "dark",
+                                "dateRange": "12M",
+                                    "locale": "ru",
+                                        "largeChartUrl": "",
+                                            "isTransparent": false,
+                                                "showFloatingTooltip": false,
+                                                    "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+                                                        "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+                                                            "gridLineColor": "rgba(240, 243, 250, 0)",
+                                                                "scaleFontColor": "#DBDBDB",
+                                                                    "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+                                                                        "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+                                                                            "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+                                                                                "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+                                                                                    "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
+                                                                                        "tabs": [
+                                                                                            {
+                                                                                                "title": "Металлы",
+                                                                                                "symbols": [
+                                                                                                    {
+                                                                                                        "s": "CAPITALCOM:GOLD",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "metal/gold",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "TVC:SILVER",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "metal/silver",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "NASDAQ:COOP",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "mr-cooper-group",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "PEPPERSTONE:ALUMINIUM",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "metal/aluminum",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "CAPITALCOM:PLATINUM",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "metal/platinum",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    }
+                                                                                                ],
+                                                                                                "originalTitle": "Indices"
+                                                                                            },
+                                                                                            {
+                                                                                                "title": "Энергоносители",
+                                                                                                "symbols": [
+                                                                                                    {
+                                                                                                        "s": "BLACKBULL:BRENT",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "crude-oil",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "BLACKBULL:WTI",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "crude-oil",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "PEPPERSTONE:NATGAS",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "natural-gas",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    }
+                                                                                                ],
+                                                                                                "originalTitle": "Futures"
+                                                                                            },
+                                                                                            {
+                                                                                                "title": "Форекс",
+                                                                                                "symbols": [
+                                                                                                    {
+                                                                                                        "s": "OANDA:GBPUSD",
+                                                                                                        "d": "",
+                                                                                                        "base-currency-logoid": "country/GB",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "OANDA:AUDUSD",
+                                                                                                        "d": "",
+                                                                                                        "base-currency-logoid": "country/AU",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "OANDA:EURCHF",
+                                                                                                        "d": "",
+                                                                                                        "base-currency-logoid": "country/EU",
+                                                                                                        "currency-logoid": "country/CH"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "OANDA:EURUSD",
+                                                                                                        "d": "",
+                                                                                                        "base-currency-logoid": "country/EU",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "OANDA:USDJPY",
+                                                                                                        "d": "",
+                                                                                                        "base-currency-logoid": "country/US",
+                                                                                                        "currency-logoid": "country/JP"
+                                                                                                    }
+                                                                                                ],
+                                                                                                "originalTitle": "Forex"
+                                                                                            },
+                                                                                            {
+                                                                                                "title": "Акции США",
+                                                                                                "symbols": [
+                                                                                                    {
+                                                                                                        "s": "NYSE:BA",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "boeing",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "NYSE:CVX",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "chevron",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "NYSE:XOM",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "exxon",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "VIE:FORD",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "ford",
+                                                                                                        "currency-logoid": "country/EU"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "NASDAQ:TSLA",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "tesla",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        ],
+                                                                                            "support_host": "https://www.tradingview.com",
+                                                                                                "backgroundColor": "#0f0f0f",
+                                                                                                    "width": "100%",
+                                                                                                        "height": "100%",
+                                                                                                            "showSymbolLogo": true,
+                                                                                                                "showChart": true
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+
+            <div class="widget-box">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+                        {
+                            "colorTheme": "light",
+                                "dateRange": "12M",
+                                    "locale": "en",
+                                        "largeChartUrl": "",
+                                            "isTransparent": false,
+                                                "showFloatingTooltip": false,
+                                                    "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+                                                        "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+                                                            "gridLineColor": "rgba(240, 243, 250, 0)",
+                                                                "scaleFontColor": "#0F0F0F",
+                                                                    "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+                                                                        "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+                                                                            "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+                                                                                "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+                                                                                    "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
+                                                                                        "tabs": [
+                                                                                            {
+                                                                                                "title": "Metals",
+                                                                                                "symbols": [
+                                                                                                    {
+                                                                                                        "s": "CAPITALCOM:GOLD",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "metal/gold",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "TVC:SILVER",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "metal/silver",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "NASDAQ:COOP",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "mr-cooper-group",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "PEPPERSTONE:ALUMINIUM",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "metal/aluminum",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "CAPITALCOM:PLATINUM",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "metal/platinum",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    }
+                                                                                                ],
+                                                                                                "originalTitle": "Indices"
+                                                                                            },
+                                                                                            {
+                                                                                                "title": "Energy carriers",
+                                                                                                "symbols": [
+                                                                                                    {
+                                                                                                        "s": "BLACKBULL:BRENT",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "crude-oil",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "BLACKBULL:WTI",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "crude-oil",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "PEPPERSTONE:NATGAS",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "natural-gas",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    }
+                                                                                                ],
+                                                                                                "originalTitle": "Futures"
+                                                                                            },
+                                                                                            {
+                                                                                                "title": "Forex",
+                                                                                                "symbols": [
+                                                                                                    {
+                                                                                                        "s": "OANDA:GBPUSD",
+                                                                                                        "d": "",
+                                                                                                        "base-currency-logoid": "country/GB",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "OANDA:AUDUSD",
+                                                                                                        "d": "",
+                                                                                                        "base-currency-logoid": "country/AU",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "OANDA:EURCHF",
+                                                                                                        "d": "",
+                                                                                                        "base-currency-logoid": "country/EU",
+                                                                                                        "currency-logoid": "country/CH"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "OANDA:EURUSD",
+                                                                                                        "d": "",
+                                                                                                        "base-currency-logoid": "country/EU",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "OANDA:USDJPY",
+                                                                                                        "d": "",
+                                                                                                        "base-currency-logoid": "country/US",
+                                                                                                        "currency-logoid": "country/JP"
+                                                                                                    }
+                                                                                                ],
+                                                                                                "originalTitle": "Forex"
+                                                                                            },
+                                                                                            {
+                                                                                                "title": "US stocks",
+                                                                                                "symbols": [
+                                                                                                    {
+                                                                                                        "s": "NYSE:BA",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "boeing",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "NYSE:CVX",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "chevron",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "NYSE:XOM",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "exxon",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "VIE:FORD",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "ford",
+                                                                                                        "currency-logoid": "country/EU"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "NASDAQ:TSLA",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "tesla",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        ],
+                                                                                            "support_host": "https://www.tradingview.com",
+                                                                                                "backgroundColor": "#0f0f0f",
+                                                                                                    "width": "100%",
+                                                                                                        "height": "100%",
+                                                                                                            "showSymbolLogo": true,
+                                                                                                                "showChart": true
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+
+            <div class="widget-box">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+                        {
+                            "colorTheme": "dark",
+                                "dateRange": "12M",
+                                    "locale": "en",
+                                        "largeChartUrl": "",
+                                            "isTransparent": false,
+                                                "showFloatingTooltip": false,
+                                                    "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+                                                        "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+                                                            "gridLineColor": "rgba(240, 243, 250, 0)",
+                                                                "scaleFontColor": "#DBDBDB",
+                                                                    "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+                                                                        "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+                                                                            "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+                                                                                "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+                                                                                    "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
+                                                                                        "tabs": [
+                                                                                            {
+                                                                                                "title": "Metals",
+                                                                                                "symbols": [
+                                                                                                    {
+                                                                                                        "s": "CAPITALCOM:GOLD",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "metal/gold",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "TVC:SILVER",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "metal/silver",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "NASDAQ:COOP",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "mr-cooper-group",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "PEPPERSTONE:ALUMINIUM",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "metal/aluminum",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "CAPITALCOM:PLATINUM",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "metal/platinum",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    }
+                                                                                                ],
+                                                                                                "originalTitle": "Indices"
+                                                                                            },
+                                                                                            {
+                                                                                                "title": "Energy carriers",
+                                                                                                "symbols": [
+                                                                                                    {
+                                                                                                        "s": "BLACKBULL:BRENT",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "crude-oil",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "BLACKBULL:WTI",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "crude-oil",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "PEPPERSTONE:NATGAS",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "natural-gas",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    }
+                                                                                                ],
+                                                                                                "originalTitle": "Futures"
+                                                                                            },
+                                                                                            {
+                                                                                                "title": "Forex",
+                                                                                                "symbols": [
+                                                                                                    {
+                                                                                                        "s": "OANDA:GBPUSD",
+                                                                                                        "d": "",
+                                                                                                        "base-currency-logoid": "country/GB",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "OANDA:AUDUSD",
+                                                                                                        "d": "",
+                                                                                                        "base-currency-logoid": "country/AU",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "OANDA:EURCHF",
+                                                                                                        "d": "",
+                                                                                                        "base-currency-logoid": "country/EU",
+                                                                                                        "currency-logoid": "country/CH"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "OANDA:EURUSD",
+                                                                                                        "d": "",
+                                                                                                        "base-currency-logoid": "country/EU",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "OANDA:USDJPY",
+                                                                                                        "d": "",
+                                                                                                        "base-currency-logoid": "country/US",
+                                                                                                        "currency-logoid": "country/JP"
+                                                                                                    }
+                                                                                                ],
+                                                                                                "originalTitle": "Forex"
+                                                                                            },
+                                                                                            {
+                                                                                                "title": "US stocks",
+                                                                                                "symbols": [
+                                                                                                    {
+                                                                                                        "s": "NYSE:BA",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "boeing",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "NYSE:CVX",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "chevron",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "NYSE:XOM",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "exxon",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "VIE:FORD",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "ford",
+                                                                                                        "currency-logoid": "country/EU"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "s": "NASDAQ:TSLA",
+                                                                                                        "d": "",
+                                                                                                        "logoid": "tesla",
+                                                                                                        "currency-logoid": "country/US"
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        ],
+                                                                                            "support_host": "https://www.tradingview.com",
+                                                                                                "backgroundColor": "#0f0f0f",
+                                                                                                    "width": "100%",
+                                                                                                        "height": "100%",
+                                                                                                            "showSymbolLogo": true,
+                                                                                                                "showChart": true
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+        </div>
+    </div>
+</section>
