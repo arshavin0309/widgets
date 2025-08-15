@@ -1,0 +1,127 @@
+@import '../../node_modules/normalize.css/normalize';
+@import '../../node_modules/swiper/swiper-bundle';
+@import '../scss/keyframes';
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --transition: .3s ease-in-out all;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--black);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    transition: var(--transition);
+    color: var(--white);
+
+    scrollbar-width: thin;
+    scrollbar-color: var(--white) var(--black); // 1й цвет бугунка скролла, 2й фоновый цвет скролла
+
+    &::before {
+        transition: var(--transition);
+    }
+
+    &::after {
+        transition: var(--transition);
+    }
+
+    &::-webkit-scrollbar {
+        height: 12px;
+        width: 12px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: var(--black); // фоновый цвет скролла
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--white); // цвет бегунка скролла
+        border-radius: 5px;
+        border: 3px solid var(--black); // фоновый цвет скролла
+    }
+}
+
+.header {
+    display: none;
+}
+
+.footer {
+    display: none;
+}
+
+.upButton {
+    z-index: 1000;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    bottom: 20px;
+    right: 15px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    transform: scale(0);
+    pointer-events: none;
+    background: var(--blue);
+    border-radius: 50px;
+    filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.2));
+
+    &.show {
+        transition: all 1s ease-in-out;
+        transform: scale(1);
+        pointer-events: all;
+    }
+}
+
+.container {
+    max-width: calc(1128px + 30px + 30px); // ширина самого контейнера + боковые паддинги
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.footer {
+    display: none;
+}
+
+h2 {
+    margin-bottom: 50px;
+}
+
+.widget-box {
+    height: 600px;
+}
+
+section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+@import '../scss/hovers';
+@import '../scss/1800';
+@import '../scss/1700';
+@import '../scss/1600';
+@import '../scss/1500';
+@import '../scss/1400';
+@import '../scss/1300';
+@import '../scss/1200';
+@import '../scss/1024';
+@import '../scss/992';
+@import '../scss/900';
+@import '../scss/768';
+@import '../scss/700';
+@import '../scss/600';
+@import '../scss/500';
+@import '../scss/360';
