@@ -7,47 +7,87 @@
         </div>
     </section>
 
-    <section>
+    <section id="real-time">
         <div class="container">
             <h2>Advanced Real-Time Chart</h2>
 
-            <div class="widget-box">
-                <!-- TradingView Widget BEGIN -->
-                <div class="tradingview-widget-container" style="height:100%;width:100%">
-                    <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
-                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-                        {
-                            "allow_symbol_change": true,
-                                "calendar": false,
-                                    "details": false,
-                                        "hide_side_toolbar": true,
-                                            "hide_top_toolbar": false,
-                                                "hide_legend": false,
-                                                    "hide_volume": false,
-                                                        "hotlist": false,
-                                                            "interval": "D",
-                                                                "locale": "en",
-                                                                    "save_image": true,
-                                                                        "style": "1",
-                                                                            "symbol": "CMCMARKETS:EURUSD",
-                                                                                "theme": "dark",
-                                                                                    "timezone": "Etc/UTC",
-                                                                                        "backgroundColor": "#0F0F0F",
-                                                                                            "gridColor": "rgba(242, 242, 242, 0.06)",
-                                                                                                "watchlist": [],
-                                                                                                    "withdateranges": false,
-                                                                                                        "compareSymbols": [],
-                                                                                                            "studies": [],
-                                                                                                                "autosize": true
-                        }
-                    </script>
+            <div style="
+                display: grid;
+                gap: 20px;
+                grid-template-columns: repeat(2, 1fr);
+            ">
+                <div class="widget-box">
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container" style="height: 100%; width: 100%">
+                        <div class="tradingview-widget-container__widget" style="height: calc(100% - 32px); width: 100%"></div>
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                            {
+                                "allow_symbol_change": true,
+                                    "calendar": false,
+                                        "details": false,
+                                            "hide_side_toolbar": true,
+                                                "hide_top_toolbar": false,
+                                                    "hide_legend": false,
+                                                        "hide_volume": false,
+                                                            "hotlist": false,
+                                                                "interval": "D",
+                                                                    "locale": "ru",
+                                                                        "save_image": true,
+                                                                            "style": "1",
+                                                                                "symbol": "CMCMARKETS:EURUSD",
+                                                                                    "theme": "light",
+                                                                                        "timezone": "Etc/UTC",
+                                                                                            "backgroundColor": "#ffffff",
+                                                                                                "gridColor": "rgba(46, 46, 46, 0.06)",
+                                                                                                    "watchlist": [],
+                                                                                                        "withdateranges": false,
+                                                                                                            "compareSymbols": [],
+                                                                                                                "studies": [],
+                                                                                                                    "autosize": true
+                            }
+                        </script>
+                    </div>
+                    <!-- TradingView Widget END -->
                 </div>
-                <!-- TradingView Widget END -->
+
+                <div class="widget-box">
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container" style="height: 100%; width: 100%">
+                        <div class="tradingview-widget-container__widget" style="height: calc(100% - 32px); width: 100%"></div>
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                            {
+                                "allow_symbol_change": true,
+                                    "calendar": false,
+                                        "details": false,
+                                            "hide_side_toolbar": true,
+                                                "hide_top_toolbar": false,
+                                                    "hide_legend": false,
+                                                        "hide_volume": false,
+                                                            "hotlist": false,
+                                                                "interval": "D",
+                                                                    "locale": "en",
+                                                                        "save_image": true,
+                                                                            "style": "1",
+                                                                                "symbol": "CMCMARKETS:EURUSD",
+                                                                                    "theme": "dark",
+                                                                                        "timezone": "Etc/UTC",
+                                                                                            "backgroundColor": "#0F0F0F",
+                                                                                                "gridColor": "rgba(242, 242, 242, 0.06)",
+                                                                                                    "watchlist": [],
+                                                                                                        "withdateranges": false,
+                                                                                                            "compareSymbols": [],
+                                                                                                                "studies": [],
+                                                                                                                    "autosize": true
+                            }
+                        </script>
+                    </div>
+                    <!-- TradingView Widget END -->
+                </div>
             </div>
         </div>
     </section>
 
-    <section>
+    <section id="overview">
         <div class="container">
             <h2>Market Overview</h2>
 
@@ -219,33 +259,294 @@
         </div>
     </section>
 
-    <section>
+    <section id="data">
         <div class="container">
-            <h2>Эти виджеты хотят</h2>
+            <h2>Market Data</h2>
 
-            <ul>
-                <li>
-                    <a target="_blank" href="https://www.tradingview.com/widget-docs/widgets/watchlists/market-quotes/">https://www.tradingview.com/widget-docs/widgets/watchlists/market-quotes/</a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://www.tradingview.com/widget-docs/widgets/news/top-stories/">https://www.tradingview.com/widget-docs/widgets/news/top-stories/</a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://www.tradingview.com/widget-docs/widgets/calendars/economic-calendar/">https://www.tradingview.com/widget-docs/widgets/calendars/economic-calendar/</a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://www.tradingview.com/widget-docs/widgets/heatmaps/forex-cross-rates/">https://www.tradingview.com/widget-docs/widgets/heatmaps/forex-cross-rates/</a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://www.tradingview.com/widget-docs/widgets/heatmaps/forex-heatmap/">https://www.tradingview.com/widget-docs/widgets/heatmaps/forex-heatmap/</a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://www.tradingview.com/widget-docs/widgets/screeners/crypto-mkt-screener/">https://www.tradingview.com/widget-docs/widgets/screeners/crypto-mkt-screener/</a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://www.tradingview.com/widget-docs/widgets/symbol-details/technical-analysis/">https://www.tradingview.com/widget-docs/widgets/symbol-details/technical-analysis/</a>
-                </li>
-            </ul>
+            <div class="widget-box">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+                        {
+                            "colorTheme": "dark",
+                                "locale": "en",
+                                    "largeChartUrl": "",
+                                        "isTransparent": false,
+                                            "showSymbolLogo": true,
+                                                "backgroundColor": "#0F0F0F",
+                                                    "support_host": "https://www.tradingview.com",
+                                                        "width": "100%",
+                                                            "height": "100%",
+                                                                "symbolsGroups": [
+                                                                    {
+                                                                        "name": "Metals",
+                                                                        "symbols": [
+                                                                            {
+                                                                                "name": "CAPITALCOM:GOLD",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "TVC:SILVER",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "NASDAQ:COOP",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "PEPPERSTONE:ALUMINIUM",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "CAPITALCOM:PLATINUM",
+                                                                                "displayName": ""
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Energy carriers",
+                                                                        "symbols": [
+                                                                            {
+                                                                                "name": "BLACKBULL:BRENT",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "BLACKBULL:WTI",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "PEPPERSTONE:NATGAS",
+                                                                                "displayName": ""
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Forex",
+                                                                        "symbols": [
+                                                                            {
+                                                                                "name": "OANDA:GBPUSD",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "OANDA:AUDUSD",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "OANDA:EURCHF",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "OANDA:EURUSD",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "OANDA:USDJPY",
+                                                                                "displayName": ""
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "US stocks",
+                                                                        "symbols": [
+                                                                            {
+                                                                                "name": "NYSE:BA",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "NYSE:CVX",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "NYSE:XOM",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "VIE:FORD",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "NASDAQ:TSLA",
+                                                                                "displayName": ""
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+        </div>
+    </section>
+
+    <section id="calendar">
+        <div class="container">
+            <h2>Economic Calendar</h2>
+
+            <div class="widget-box">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
+                        {
+                            "colorTheme": "dark",
+                                "isTransparent": false,
+                                    "locale": "en",
+                                        "countryFilter": "ar,au,br,ca,cn,fr,de,in,id,it,jp,kr,mx,ru,sa,za,tr,gb,us,eu",
+                                            "importanceFilter": "-1,0,1",
+                                                "width": "100%",
+                                                    "height": "100%"
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+        </div>
+    </section>
+
+    <section id="rates">
+        <div class="container">
+            <h2>Forex Cross Rates</h2>
+
+            <div class="widget-box">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
+                        {
+                            "colorTheme": "dark",
+                                "isTransparent": false,
+                                    "locale": "en",
+                                        "currencies": [
+                                            "EUR",
+                                            "USD",
+                                            "JPY",
+                                            "GBP",
+                                            "CHF",
+                                            "AUD",
+                                            "CAD"
+                                        ],
+                                            "backgroundColor": "#0F0F0F",
+                                                "width": "100%",
+                                                    "height": "100%"
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+        </div>
+    </section>
+
+    <section id="heatmap">
+        <div class="container">
+            <h2>Forex Heatmap</h2>
+
+            <div class="widget-box">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-heat-map.js" async>
+                        {
+                            "colorTheme": "dark",
+                                "isTransparent": false,
+                                    "locale": "en",
+                                        "currencies": [
+                                            "EUR",
+                                            "USD",
+                                            "JPY",
+                                            "GBP",
+                                            "CHF",
+                                            "AUD",
+                                            "CAD"
+                                        ],
+                                            "backgroundColor": "#0F0F0F",
+                                                "width": "100%",
+                                                    "height": "100%"
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+        </div>
+    </section>
+
+    <section id="crypto-market">
+        <div class="container">
+            <h2>Cryptocurrency Market</h2>
+
+            <div class="widget-box">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+                        {
+                            "defaultColumn": "overview",
+                                "screener_type": "crypto_mkt",
+                                    "displayCurrency": "USD",
+                                        "colorTheme": "dark",
+                                            "isTransparent": false,
+                                                "locale": "en",
+                                                    "width": "100%",
+                                                        "height": "100%"
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+        </div>
+    </section>
+
+    <section id="tech-analysis">
+        <div class="container">
+            <h2>Technical Analysis</h2>
+
+            <div class="widget-box">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+                        {
+                            "colorTheme": "dark",
+                                "displayMode": "single",
+                                    "isTransparent": false,
+                                        "locale": "en",
+                                            "interval": "1m",
+                                                "disableInterval": false,
+                                                    "width": "100%",
+                                                        "height": "100%",
+                                                            "symbol": "OANDA:EURUSD",
+                                                                "showIntervalTabs": true
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+        </div>
+    </section>
+
+    <section id="stories">
+        <div class="container">
+            <h2>Top Stories (only english)</h2>
+
+            <div class="widget-box">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
+                        {
+                            "displayMode": "regular",
+                                "feedMode": "all_symbols",
+                                    "colorTheme": "dark",
+                                        "isTransparent": false,
+                                            "locale": "en",
+                                                "width": "100%",
+                                                    "height": "100%"
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
         </div>
     </section>
 </main>
