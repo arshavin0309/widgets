@@ -1,20 +1,20 @@
-
-<svg viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_70_3)">
-<rect width="128" height="128" rx="24" fill="white"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M51.7778 91.5625H30.3889V57.875H9V36.4375H51.7778V91.5625ZM117.472 36.4375L94.5556 91.5625H70.1111L93.0278 36.4375H117.472ZM70.1111 60.9375C76.8611 60.9375 82.3333 55.4529 82.3333 48.6875C82.3333 41.922 76.8611 36.4375 70.1111 36.4375C63.3611 36.4375 57.8889 41.922 57.8889 48.6875C57.8889 55.4529 63.3611 60.9375 70.1111 60.9375Z" fill="black"/>
-</g>
-<defs>
-<clipPath id="clip0_70_3">
-<rect width="128" height="128" fill="white"/>
-</clipPath>
-</defs>
-<style>
+<svg viewBox="0 0 128 128" fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_70_3)">
+        <rect width="128" height="128" rx="24" fill="white"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M51.7778 91.5625H30.3889V57.875H9V36.4375H51.7778V91.5625ZM117.472 36.4375L94.5556 91.5625H70.1111L93.0278 36.4375H117.472ZM70.1111 60.9375C76.8611 60.9375 82.3333 55.4529 82.3333 48.6875C82.3333 41.922 76.8611 36.4375 70.1111 36.4375C63.3611 36.4375 57.8889 41.922 57.8889 48.6875C57.8889 55.4529 63.3611 60.9375 70.1111 60.9375Z" fill="black"/>
+    </g>
+    <defs>
+        <clipPath id="clip0_70_3">
+            <rect width="128" height="128" fill="white"/>
+        </clipPath>
+    </defs>
+    <style>
     path { fill: #000; }
     rect { fill: #FFF; }
     @media (prefers-color-scheme: dark) {
         path { fill: #FFF; }
         rect { fill: #000; }
     }
-</style>
+    </style>
 </svg>
