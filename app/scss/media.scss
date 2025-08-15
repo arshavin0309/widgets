@@ -1,0 +1,28 @@
+@media (max-width: 1366px),
+(max-height: 768px) {
+
+    header,
+    main,
+    footer {
+        display: none;
+    }
+
+    body {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+
+        &::after {
+            position: absolute;
+            content: 'Пожалуйста, откройте сайт с компьютера или уменьшите масштаб экрана';
+            inset: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 15%;
+            color: var(--white);
+            font-size: 40px;
+            text-align: center;
+        }
+    }
+}

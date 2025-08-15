@@ -1,6 +1,5 @@
 @import '../../node_modules/normalize.css/normalize';
 @import '../../node_modules/swiper/swiper-bundle';
-@import '../scss/keyframes';
 
 :root {
     --black: #000;
@@ -114,8 +113,8 @@ body {
 
 .container {
     margin: auto;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .footer {
@@ -139,25 +138,50 @@ h2 {
 .widget-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    gap: 20px;
 
     .widget-box {
-        height: calc(((100vh - 100px - 100px - 100px) / 2) - 25px);
+        position: relative;
+        height: calc(((100vh - 40px - 40px - 100px) / 2) - 10px);
+
+        .btn-copy {
+            position: absolute;
+            left: 50%;
+            bottom: 10px;
+            transform: translateX(-50%);
+            padding: 20px 60px;
+            background: green;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        &:hover {
+            .btn-copy {
+                opacity: 1;
+
+                &:hover {
+                    background: rgb(0, 85, 0);
+                }
+            }
+        }
     }
 }
 
 .widget-box {
-    height: calc(100vh - 100px - 100px - 100px);
+    height: calc(100vh - 40px - 40px - 100px);
 }
 
 section {
     min-height: 100vh;
-    padding: 50px 30px 50px 0;
+    padding: 20px 20px 20px 0;
 
     .container {
-        height: calc(100vh - 50px - 50px);
-        padding-top: 50px;
-        padding-bottom: 50px;
+        height: calc(100vh - 20px - 20px);
+        padding-top: 20px;
+        padding-bottom: 20px;
         background: grey;
         border-radius: 20px;
     }
@@ -184,19 +208,4 @@ ol {
     }
 }
 
-@import '../scss/hovers';
-@import '../scss/1800';
-@import '../scss/1700';
-@import '../scss/1600';
-@import '../scss/1500';
-@import '../scss/1400';
-@import '../scss/1300';
-@import '../scss/1200';
-@import '../scss/1024';
-@import '../scss/992';
-@import '../scss/900';
-@import '../scss/768';
-@import '../scss/700';
-@import '../scss/600';
-@import '../scss/500';
-@import '../scss/360';
+@import '../scss/media';
