@@ -2,119 +2,934 @@
     <div class="container">
         <h2>Рыночные данные</h2>
 
-        <div class="widget-box">
-            <!-- TradingView Widget BEGIN -->
-            <div class="tradingview-widget-container">
-                <div class="tradingview-widget-container__widget"></div>
-                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
-                    {
-                        "colorTheme": "dark",
-                            "locale": "en",
-                                "largeChartUrl": "",
-                                    "isTransparent": false,
-                                        "showSymbolLogo": true,
-                                            "backgroundColor": "#0F0F0F",
-                                                "support_host": "https://www.tradingview.com",
-                                                    "width": "100%",
-                                                        "height": "100%",
-                                                            "symbolsGroups": [
-                                                                {
-                                                                    "name": "Metals",
-                                                                    "symbols": [
+        <div class="widget-container">
+            <div class="widget-box">
+                <button class="btn-copy">Скопировать код</button>
+
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+                        {
+                            "colorTheme": "light",
+                                "locale": "ru",
+                                    "largeChartUrl": "",
+                                        "isTransparent": false,
+                                            "showSymbolLogo": true,
+                                                "backgroundColor": "#ffffff",
+                                                    "support_host": "https://www.tradingview.com",
+                                                        "width": "100%",
+                                                            "height": "100%",
+                                                                "symbolsGroups": [
+                                                                    {
+                                                                        "name": "Металлы",
+                                                                        "symbols": [
+                                                                            {
+                                                                                "name": "CAPITALCOM:GOLD",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "TVC:SILVER",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "NASDAQ:COOP",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "PEPPERSTONE:ALUMINIUM",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "CAPITALCOM:PLATINUM",
+                                                                                "displayName": ""
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Энергоносители",
+                                                                        "symbols": [
+                                                                            {
+                                                                                "name": "BLACKBULL:BRENT",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "BLACKBULL:WTI",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "PEPPERSTONE:NATGAS",
+                                                                                "displayName": ""
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Форекс",
+                                                                        "symbols": [
+                                                                            {
+                                                                                "name": "OANDA:GBPUSD",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "OANDA:AUDUSD",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "OANDA:EURCHF",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "OANDA:EURUSD",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "OANDA:USDJPY",
+                                                                                "displayName": ""
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Акции США",
+                                                                        "symbols": [
+                                                                            {
+                                                                                "name": "NYSE:BA",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "NYSE:CVX",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "NYSE:XOM",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "VIE:FORD",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "NASDAQ:TSLA",
+                                                                                "displayName": ""
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+
+                <template>
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+                            {
+                                "colorTheme": "light",
+                                    "locale": "ru",
+                                        "largeChartUrl": "",
+                                            "isTransparent": false,
+                                                "showSymbolLogo": true,
+                                                    "backgroundColor": "#ffffff",
+                                                        "support_host": "https://www.tradingview.com",
+                                                            "width": "100%",
+                                                                "height": "100%",
+                                                                    "symbolsGroups": [
                                                                         {
-                                                                            "name": "CAPITALCOM:GOLD",
-                                                                            "displayName": ""
+                                                                            "name": "Металлы",
+                                                                            "symbols": [
+                                                                                {
+                                                                                    "name": "CAPITALCOM:GOLD",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "TVC:SILVER",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "NASDAQ:COOP",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "PEPPERSTONE:ALUMINIUM",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "CAPITALCOM:PLATINUM",
+                                                                                    "displayName": ""
+                                                                                }
+                                                                            ]
                                                                         },
                                                                         {
-                                                                            "name": "TVC:SILVER",
-                                                                            "displayName": ""
+                                                                            "name": "Энергоносители",
+                                                                            "symbols": [
+                                                                                {
+                                                                                    "name": "BLACKBULL:BRENT",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "BLACKBULL:WTI",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "PEPPERSTONE:NATGAS",
+                                                                                    "displayName": ""
+                                                                                }
+                                                                            ]
                                                                         },
                                                                         {
-                                                                            "name": "NASDAQ:COOP",
-                                                                            "displayName": ""
+                                                                            "name": "Форекс",
+                                                                            "symbols": [
+                                                                                {
+                                                                                    "name": "OANDA:GBPUSD",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "OANDA:AUDUSD",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "OANDA:EURCHF",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "OANDA:EURUSD",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "OANDA:USDJPY",
+                                                                                    "displayName": ""
+                                                                                }
+                                                                            ]
                                                                         },
                                                                         {
-                                                                            "name": "PEPPERSTONE:ALUMINIUM",
-                                                                            "displayName": ""
-                                                                        },
-                                                                        {
-                                                                            "name": "CAPITALCOM:PLATINUM",
-                                                                            "displayName": ""
+                                                                            "name": "Акции США",
+                                                                            "symbols": [
+                                                                                {
+                                                                                    "name": "NYSE:BA",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "NYSE:CVX",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "NYSE:XOM",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "VIE:FORD",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "NASDAQ:TSLA",
+                                                                                    "displayName": ""
+                                                                                }
+                                                                            ]
                                                                         }
                                                                     ]
-                                                                },
-                                                                {
-                                                                    "name": "Energy carriers",
-                                                                    "symbols": [
-                                                                        {
-                                                                            "name": "BLACKBULL:BRENT",
-                                                                            "displayName": ""
-                                                                        },
-                                                                        {
-                                                                            "name": "BLACKBULL:WTI",
-                                                                            "displayName": ""
-                                                                        },
-                                                                        {
-                                                                            "name": "PEPPERSTONE:NATGAS",
-                                                                            "displayName": ""
-                                                                        }
-                                                                    ]
-                                                                },
-                                                                {
-                                                                    "name": "Forex",
-                                                                    "symbols": [
-                                                                        {
-                                                                            "name": "OANDA:GBPUSD",
-                                                                            "displayName": ""
-                                                                        },
-                                                                        {
-                                                                            "name": "OANDA:AUDUSD",
-                                                                            "displayName": ""
-                                                                        },
-                                                                        {
-                                                                            "name": "OANDA:EURCHF",
-                                                                            "displayName": ""
-                                                                        },
-                                                                        {
-                                                                            "name": "OANDA:EURUSD",
-                                                                            "displayName": ""
-                                                                        },
-                                                                        {
-                                                                            "name": "OANDA:USDJPY",
-                                                                            "displayName": ""
-                                                                        }
-                                                                    ]
-                                                                },
-                                                                {
-                                                                    "name": "US stocks",
-                                                                    "symbols": [
-                                                                        {
-                                                                            "name": "NYSE:BA",
-                                                                            "displayName": ""
-                                                                        },
-                                                                        {
-                                                                            "name": "NYSE:CVX",
-                                                                            "displayName": ""
-                                                                        },
-                                                                        {
-                                                                            "name": "NYSE:XOM",
-                                                                            "displayName": ""
-                                                                        },
-                                                                        {
-                                                                            "name": "VIE:FORD",
-                                                                            "displayName": ""
-                                                                        },
-                                                                        {
-                                                                            "name": "NASDAQ:TSLA",
-                                                                            "displayName": ""
-                                                                        }
-                                                                    ]
-                                                                }
-                                                            ]
-                    }
-                </script>
+                            }
+                        </script>
+                    </div>
+                    <!-- TradingView Widget END -->
+                </template>
             </div>
-            <!-- TradingView Widget END -->
+
+            <div class="widget-box">
+                <button class="btn-copy">Скопировать код</button>
+
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+                        {
+                            "colorTheme": "dark",
+                                "locale": "ru",
+                                    "largeChartUrl": "",
+                                        "isTransparent": false,
+                                            "showSymbolLogo": true,
+                                                "backgroundColor": "#0F0F0F",
+                                                    "support_host": "https://www.tradingview.com",
+                                                        "width": "100%",
+                                                            "height": "100%",
+                                                                "symbolsGroups": [
+                                                                    {
+                                                                        "name": "Металлы",
+                                                                        "symbols": [
+                                                                            {
+                                                                                "name": "CAPITALCOM:GOLD",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "TVC:SILVER",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "NASDAQ:COOP",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "PEPPERSTONE:ALUMINIUM",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "CAPITALCOM:PLATINUM",
+                                                                                "displayName": ""
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Энергоносители",
+                                                                        "symbols": [
+                                                                            {
+                                                                                "name": "BLACKBULL:BRENT",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "BLACKBULL:WTI",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "PEPPERSTONE:NATGAS",
+                                                                                "displayName": ""
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Форекс",
+                                                                        "symbols": [
+                                                                            {
+                                                                                "name": "OANDA:GBPUSD",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "OANDA:AUDUSD",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "OANDA:EURCHF",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "OANDA:EURUSD",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "OANDA:USDJPY",
+                                                                                "displayName": ""
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Акции США",
+                                                                        "symbols": [
+                                                                            {
+                                                                                "name": "NYSE:BA",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "NYSE:CVX",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "NYSE:XOM",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "VIE:FORD",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "NASDAQ:TSLA",
+                                                                                "displayName": ""
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+
+                <template>
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+                            {
+                                "colorTheme": "dark",
+                                    "locale": "ru",
+                                        "largeChartUrl": "",
+                                            "isTransparent": false,
+                                                "showSymbolLogo": true,
+                                                    "backgroundColor": "#0F0F0F",
+                                                        "support_host": "https://www.tradingview.com",
+                                                            "width": "100%",
+                                                                "height": "100%",
+                                                                    "symbolsGroups": [
+                                                                        {
+                                                                            "name": "Металлы",
+                                                                            "symbols": [
+                                                                                {
+                                                                                    "name": "CAPITALCOM:GOLD",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "TVC:SILVER",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "NASDAQ:COOP",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "PEPPERSTONE:ALUMINIUM",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "CAPITALCOM:PLATINUM",
+                                                                                    "displayName": ""
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "name": "Энергоносители",
+                                                                            "symbols": [
+                                                                                {
+                                                                                    "name": "BLACKBULL:BRENT",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "BLACKBULL:WTI",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "PEPPERSTONE:NATGAS",
+                                                                                    "displayName": ""
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "name": "Форекс",
+                                                                            "symbols": [
+                                                                                {
+                                                                                    "name": "OANDA:GBPUSD",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "OANDA:AUDUSD",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "OANDA:EURCHF",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "OANDA:EURUSD",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "OANDA:USDJPY",
+                                                                                    "displayName": ""
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "name": "Акции США",
+                                                                            "symbols": [
+                                                                                {
+                                                                                    "name": "NYSE:BA",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "NYSE:CVX",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "NYSE:XOM",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "VIE:FORD",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "NASDAQ:TSLA",
+                                                                                    "displayName": ""
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                            }
+                        </script>
+                    </div>
+                    <!-- TradingView Widget END -->
+                </template>
+            </div>
+
+            <div class="widget-box">
+                <button class="btn-copy">Скопировать код</button>
+
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+                        {
+                            "colorTheme": "light",
+                                "locale": "en",
+                                    "largeChartUrl": "",
+                                        "isTransparent": false,
+                                            "showSymbolLogo": true,
+                                                "backgroundColor": "#ffffff",
+                                                    "support_host": "https://www.tradingview.com",
+                                                        "width": "100%",
+                                                            "height": "100%",
+                                                                "symbolsGroups": [
+                                                                    {
+                                                                        "name": "Metals",
+                                                                        "symbols": [
+                                                                            {
+                                                                                "name": "CAPITALCOM:GOLD",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "TVC:SILVER",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "NASDAQ:COOP",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "PEPPERSTONE:ALUMINIUM",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "CAPITALCOM:PLATINUM",
+                                                                                "displayName": ""
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Energy carriers",
+                                                                        "symbols": [
+                                                                            {
+                                                                                "name": "BLACKBULL:BRENT",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "BLACKBULL:WTI",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "PEPPERSTONE:NATGAS",
+                                                                                "displayName": ""
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Forex",
+                                                                        "symbols": [
+                                                                            {
+                                                                                "name": "OANDA:GBPUSD",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "OANDA:AUDUSD",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "OANDA:EURCHF",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "OANDA:EURUSD",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "OANDA:USDJPY",
+                                                                                "displayName": ""
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "US stocks",
+                                                                        "symbols": [
+                                                                            {
+                                                                                "name": "NYSE:BA",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "NYSE:CVX",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "NYSE:XOM",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "VIE:FORD",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "NASDAQ:TSLA",
+                                                                                "displayName": ""
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+
+                <template>
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+                            {
+                                "colorTheme": "light",
+                                    "locale": "en",
+                                        "largeChartUrl": "",
+                                            "isTransparent": false,
+                                                "showSymbolLogo": true,
+                                                    "backgroundColor": "#ffffff",
+                                                        "support_host": "https://www.tradingview.com",
+                                                            "width": "100%",
+                                                                "height": "100%",
+                                                                    "symbolsGroups": [
+                                                                        {
+                                                                            "name": "Metals",
+                                                                            "symbols": [
+                                                                                {
+                                                                                    "name": "CAPITALCOM:GOLD",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "TVC:SILVER",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "NASDAQ:COOP",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "PEPPERSTONE:ALUMINIUM",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "CAPITALCOM:PLATINUM",
+                                                                                    "displayName": ""
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "name": "Energy carriers",
+                                                                            "symbols": [
+                                                                                {
+                                                                                    "name": "BLACKBULL:BRENT",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "BLACKBULL:WTI",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "PEPPERSTONE:NATGAS",
+                                                                                    "displayName": ""
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "name": "Forex",
+                                                                            "symbols": [
+                                                                                {
+                                                                                    "name": "OANDA:GBPUSD",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "OANDA:AUDUSD",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "OANDA:EURCHF",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "OANDA:EURUSD",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "OANDA:USDJPY",
+                                                                                    "displayName": ""
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "name": "US stocks",
+                                                                            "symbols": [
+                                                                                {
+                                                                                    "name": "NYSE:BA",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "NYSE:CVX",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "NYSE:XOM",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "VIE:FORD",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "NASDAQ:TSLA",
+                                                                                    "displayName": ""
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                            }
+                        </script>
+                    </div>
+                    <!-- TradingView Widget END -->
+                </template>
+            </div>
+
+            <div class="widget-box">
+                <button class="btn-copy">Скопировать код</button>
+
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+                        {
+                            "colorTheme": "dark",
+                                "locale": "en",
+                                    "largeChartUrl": "",
+                                        "isTransparent": false,
+                                            "showSymbolLogo": true,
+                                                "backgroundColor": "#0F0F0F",
+                                                    "support_host": "https://www.tradingview.com",
+                                                        "width": "100%",
+                                                            "height": "100%",
+                                                                "symbolsGroups": [
+                                                                    {
+                                                                        "name": "Metals",
+                                                                        "symbols": [
+                                                                            {
+                                                                                "name": "CAPITALCOM:GOLD",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "TVC:SILVER",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "NASDAQ:COOP",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "PEPPERSTONE:ALUMINIUM",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "CAPITALCOM:PLATINUM",
+                                                                                "displayName": ""
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Energy carriers",
+                                                                        "symbols": [
+                                                                            {
+                                                                                "name": "BLACKBULL:BRENT",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "BLACKBULL:WTI",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "PEPPERSTONE:NATGAS",
+                                                                                "displayName": ""
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Forex",
+                                                                        "symbols": [
+                                                                            {
+                                                                                "name": "OANDA:GBPUSD",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "OANDA:AUDUSD",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "OANDA:EURCHF",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "OANDA:EURUSD",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "OANDA:USDJPY",
+                                                                                "displayName": ""
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "US stocks",
+                                                                        "symbols": [
+                                                                            {
+                                                                                "name": "NYSE:BA",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "NYSE:CVX",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "NYSE:XOM",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "VIE:FORD",
+                                                                                "displayName": ""
+                                                                            },
+                                                                            {
+                                                                                "name": "NASDAQ:TSLA",
+                                                                                "displayName": ""
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+
+                <template>
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+                            {
+                                "colorTheme": "dark",
+                                    "locale": "en",
+                                        "largeChartUrl": "",
+                                            "isTransparent": false,
+                                                "showSymbolLogo": true,
+                                                    "backgroundColor": "#0F0F0F",
+                                                        "support_host": "https://www.tradingview.com",
+                                                            "width": "100%",
+                                                                "height": "100%",
+                                                                    "symbolsGroups": [
+                                                                        {
+                                                                            "name": "Metals",
+                                                                            "symbols": [
+                                                                                {
+                                                                                    "name": "CAPITALCOM:GOLD",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "TVC:SILVER",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "NASDAQ:COOP",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "PEPPERSTONE:ALUMINIUM",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "CAPITALCOM:PLATINUM",
+                                                                                    "displayName": ""
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "name": "Energy carriers",
+                                                                            "symbols": [
+                                                                                {
+                                                                                    "name": "BLACKBULL:BRENT",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "BLACKBULL:WTI",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "PEPPERSTONE:NATGAS",
+                                                                                    "displayName": ""
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "name": "Forex",
+                                                                            "symbols": [
+                                                                                {
+                                                                                    "name": "OANDA:GBPUSD",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "OANDA:AUDUSD",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "OANDA:EURCHF",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "OANDA:EURUSD",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "OANDA:USDJPY",
+                                                                                    "displayName": ""
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "name": "US stocks",
+                                                                            "symbols": [
+                                                                                {
+                                                                                    "name": "NYSE:BA",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "NYSE:CVX",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "NYSE:XOM",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "VIE:FORD",
+                                                                                    "displayName": ""
+                                                                                },
+                                                                                {
+                                                                                    "name": "NASDAQ:TSLA",
+                                                                                    "displayName": ""
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                            }
+                        </script>
+                    </div>
+                    <!-- TradingView Widget END -->
+                </template>
+            </div>
         </div>
     </div>
 </section>
