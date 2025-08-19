@@ -6,6 +6,47 @@
 
 <script defer src="js/main.min.js"></script>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const progressBar = document.querySelector('#loading-status-bar .progress');
+        const widgets = document.querySelectorAll('.widget-box');
+        const totalWidgets = widgets.length;
+        let loadedWidgets = 0;
+
+        if (totalWidgets === 0) {
+            document.body.classList.add('loaded');
+            return;
+        }
+
+        // Функция для обновления прогресса
+        function updateProgress() {
+            loadedWidgets++;
+            const progress = (loadedWidgets / totalWidgets) * 100;
+            progressBar.style.width = progress + '%';
+
+            // Если все виджеты загружены
+            if (loadedWidgets == totalWidgets) {
+                document.body.classList.add('loaded');
+            }
+        }
+
+        // Простая проверка каждые 500ms
+        function checkWidgets() {
+            widgets.forEach(widget => {
+                widget.querySelector('iframe').addEventListener('load', updateProgress());
+            });
+        }
+
+        // Запускаем проверку
+        const interval = setInterval(checkWidgets, 500);
+
+        // Останавливаем когда все загружено
+        if (loadedWidgets >= totalWidgets) {
+            clearInterval(interval);
+        }
+    })
+</script>
+
 </body>
 
 </html>
