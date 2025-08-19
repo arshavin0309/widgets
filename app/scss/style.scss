@@ -7,15 +7,12 @@
     --transition: .3s ease-in-out all;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 html,
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -72,13 +69,15 @@ body {
         justify-content: center;
 
         a {
-            height: 70px;
+            min-height: 70px;
             padding: 20px;
             font-size: 20px;
             text-decoration: none;
 
-            &:hover {
+            &.active {
+                color: black;
                 font-size: 25px;
+                background: gray;
             }
         }
     }
@@ -139,6 +138,14 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+
+    &.two-widgets {
+        grid-template-columns: 1fr;
+
+        .widget-box {
+            // height: calc(100vh - 40px - 40px - 100px);
+        }
+    }
 
     .widget-box {
         position: relative;
