@@ -1,0 +1,43 @@
+<section id="heatmap">
+    <div class="container">
+        <h2>Тепловая карта рынка форекс</h2>
+
+        <div class="widget-container two-widgets">
+            <div class="widget-box">
+                <button class="btn-copy">Скопировать код</button>
+
+                @@include('../widgets/heatmap.html', {
+                "colorTheme": "light",
+                "locale": "en",
+                "backgroundColor": "#ffffff",
+                })
+
+                <template>
+                    @@include('../widgets/heatmap.html', {
+                    "colorTheme": "light",
+                    "locale": "en",
+                    "backgroundColor": "#ffffff",
+                    })
+                </template>
+            </div>
+
+            <div class="widget-box">
+                <button class="btn-copy">Скопировать код</button>
+
+                @@include('../widgets/heatmap.html', {
+                "colorTheme": "dark",
+                "locale": "en",
+                "backgroundColor": "#0F0F0F",
+                })
+
+                <template>
+                    @@include('../widgets/heatmap.html', {
+                    "colorTheme": "dark",
+                    "locale": "en",
+                    "backgroundColor": "#0F0F0F",
+                    })
+                </template>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,43 @@
+<section id="rates">
+    <div class="container">
+        <h2>Кросс-курсы валют</h2>
+
+        <div class="widget-container two-widgets">
+            <div class="widget-box">
+                <button class="btn-copy">Скопировать код</button>
+
+                @@include('../widgets/rates.html', {
+                "colorTheme": "light",
+                "locale": "en",
+                "backgroundColor": "#ffffff",
+                })
+
+                <template>
+                    @@include('../widgets/rates.html', {
+                    "colorTheme": "light",
+                    "locale": "en",
+                    "backgroundColor": "#ffffff",
+                    })
+                </template>
+            </div>
+
+            <div class="widget-box">
+                <button class="btn-copy">Скопировать код</button>
+
+                @@include('../widgets/rates.html', {
+                "colorTheme": "dark",
+                "locale": "en",
+                "backgroundColor": "#0F0F0F",
+                })
+
+                <template>
+                    @@include('../widgets/rates.html', {
+                    "colorTheme": "dark",
+                    "locale": "en",
+                    "backgroundColor": "#0F0F0F",
+                    })
+                </template>
+            </div>
+        </div>
+    </div>
+</section>

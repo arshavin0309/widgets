@@ -16,7 +16,7 @@ body {
 }
 
 body {
-    padding-left: 500px;
+    padding-left: 380px;
     background: var(--black);
 }
 
@@ -59,7 +59,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 500px;
+    width: 380px;
     height: 100vh;
 
     &__container {
@@ -76,7 +76,6 @@ body {
 
             &.active {
                 color: black;
-                font-size: 25px;
                 background: gray;
             }
         }
@@ -127,11 +126,12 @@ h1 {
 }
 
 h2 {
-    height: 50px;
     margin-top: 0;
-    margin-bottom: 50px;
-    font-size: 40px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 100%;
     color: var(--black);
+    white-space: nowrap;
 }
 
 .widget-container {
@@ -141,44 +141,40 @@ h2 {
 
     &.two-widgets {
         grid-template-columns: 1fr;
-
-        .widget-box {
-            // height: calc(100vh - 40px - 40px - 100px);
-        }
     }
 
     .widget-box {
-        position: relative;
-        height: calc(((100vh - 40px - 40px - 100px) / 2) - 10px);
-
-        .btn-copy {
-            position: absolute;
-            left: 50%;
-            bottom: 10px;
-            transform: translateX(-50%);
-            padding: 20px 60px;
-            background: green;
-            border: none;
-            outline: none;
-            border-radius: 10px;
-            opacity: 0;
-            cursor: pointer;
-        }
-
-        &:hover {
-            .btn-copy {
-                opacity: 1;
-
-                &:hover {
-                    background: rgb(0, 85, 0);
-                }
-            }
-        }
+        height: calc(((100vh - 40px - 40px - 60px) / 2) - 10px);
     }
 }
 
 .widget-box {
-    height: calc(100vh - 40px - 40px - 100px);
+    position: relative;
+    height: calc(100vh - 40px - 40px - 60px);
+
+    .btn-copy {
+        position: absolute;
+        left: 50%;
+        bottom: 10px;
+        transform: translateX(-50%);
+        padding: 20px 60px;
+        background: green;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    &:hover {
+        .btn-copy {
+            opacity: 1;
+
+            &:hover {
+                background: rgb(0, 85, 0);
+            }
+        }
+    }
 }
 
 section {
@@ -190,7 +186,7 @@ section {
         padding-top: 20px;
         padding-bottom: 20px;
         background: grey;
-        border-radius: 20px;
+        border-radius: 8px;
     }
 }
 

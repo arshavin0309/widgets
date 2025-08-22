@@ -1,0 +1,39 @@
+<section id="stories">
+    <div class="container">
+        <h2>Новости рынков (только английский)</h2>
+
+        <div class="widget-container two-widgets">
+            <div class="widget-box">
+                <button class="btn-copy">Скопировать код</button>
+
+                @@include('../widgets/stories.html', {
+                "colorTheme": "light",
+                "locale": "en",
+                })
+
+                <template>
+                    @@include('../widgets/stories.html', {
+                    "colorTheme": "light",
+                    "locale": "en",
+                    })
+                </template>
+            </div>
+            
+            <div class="widget-box">
+                <button class="btn-copy">Скопировать код</button>
+
+                @@include('../widgets/stories.html', {
+                "colorTheme": "dark",
+                "locale": "en",
+                })
+
+                <template>
+                    @@include('../widgets/stories.html', {
+                    "colorTheme": "dark",
+                    "locale": "en",
+                    })
+                </template>
+            </div>
+        </div>
+    </div>
+</section>
