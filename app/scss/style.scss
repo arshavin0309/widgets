@@ -122,12 +122,12 @@ body {
 h1 {
     margin-top: 0;
     margin-bottom: 50px;
+    font-size: 40px;
     color: var(--black);
 }
 
 h2 {
-    margin-top: 0;
-    margin-bottom: 30px;
+    margin: 0 0 30px;
     font-size: 30px;
     line-height: 100%;
     color: var(--black);
@@ -151,6 +151,7 @@ h2 {
 .widget-box {
     position: relative;
     height: calc(100vh - 40px - 40px - 60px);
+    background: url(../images/load.avif) center / cover no-repeat;
 
     .btn-copy {
         position: absolute;
@@ -208,6 +209,36 @@ ol {
     li {
         font-size: 20px;
         color: var(--black);
+    }
+}
+
+code {
+    display: block;
+    max-height: 400px;
+    margin: 0;
+    padding: 40px;
+    background: black;
+    overflow: auto;
+    border-radius: 8px;
+    text-align: left;
+}
+
+#manual {
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        overflow: auto;
+    }
+
+    .widget-box {
+        height: initial;
+        background: none;
+
+        .btn-copy {
+            bottom: 65px;
+        }
     }
 }
 
