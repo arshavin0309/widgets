@@ -6,11 +6,15 @@
             <div class="widget-box">
                 <button class="btn-copy">Скопировать код</button>
 
-                @@include('../widgets/rates.html', {
-                "colorTheme": "light",
-                "locale": "en",
-                "backgroundColor": "#ffffff",
-                })
+                <lazy-load>
+                    <template>
+                        @@include('../widgets/rates.html', {
+                        "colorTheme": "light",
+                        "locale": "en",
+                        "backgroundColor": "#ffffff",
+                        })
+                    </template>
+                </lazy-load>
 
                 <template>
                     @@include('../widgets/rates.html', {
@@ -24,11 +28,15 @@
             <div class="widget-box">
                 <button class="btn-copy">Скопировать код</button>
 
-                @@include('../widgets/rates.html', {
-                "colorTheme": "dark",
-                "locale": "en",
-                "backgroundColor": "#0F0F0F",
-                })
+                <lazy-load>
+                    <template>
+                        @@include('../widgets/rates.html', {
+                        "colorTheme": "dark",
+                        "locale": "en",
+                        "backgroundColor": "#0F0F0F",
+                        })
+                    </template>
+                </lazy-load>
 
                 <template>
                     @@include('../widgets/rates.html', {

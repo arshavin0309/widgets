@@ -6,10 +6,14 @@
             <div class="widget-box">
                 <button class="btn-copy">Скопировать код</button>
 
-                @@include('../widgets/stories.html', {
-                "colorTheme": "light",
-                "locale": "en",
-                })
+                <lazy-load>
+                    <template>
+                        @@include('../widgets/stories.html', {
+                        "colorTheme": "light",
+                        "locale": "en",
+                        })
+                    </template>
+                </lazy-load>
 
                 <template>
                     @@include('../widgets/stories.html', {
@@ -18,14 +22,18 @@
                     })
                 </template>
             </div>
-            
+
             <div class="widget-box">
                 <button class="btn-copy">Скопировать код</button>
 
-                @@include('../widgets/stories.html', {
-                "colorTheme": "dark",
-                "locale": "en",
-                })
+                <lazy-load>
+                    <template>
+                        @@include('../widgets/stories.html', {
+                        "colorTheme": "dark",
+                        "locale": "en",
+                        })
+                    </template>
+                </lazy-load>
 
                 <template>
                     @@include('../widgets/stories.html', {
