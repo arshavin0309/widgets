@@ -1,53 +1,15 @@
-<section id="manual" class="main-hero">
+<section id="manual" class="main-hero show">
     <div class="container">
         <div>
             <h1>Виджеты TradingView</h1>
 
-            <p>При установке на сайт нужно придерживаться нескольких правил</p>
+            <h2>Как установить на сайт?</h2>
 
             <ol>
-                <li>
-                    Обязательно должны быть внутри<br><br>
-                    <code>
-                        &lt;widget-box&gt;<br>
-                        &emsp;&emsp; ... <br>
-                        &lt;/widget-box&gt;
-                    </code>
-                </li>
-                <li>Для .widget-box необходимо задать фиксированную высоту (px, vh и т.д.)</li>
-            </ol>
-        </div>
-
-        <div>
-            <h2>Lazy-load</h2>
-            <p>Если на&nbsp;странице планируется множество виджетов, можно реализовать lazy-load</p>
-            <p>Для этого нужно сделать:</p>
-
-            <ol>
-                <li>
-                    Обернуть виджеты<br><br>
-                    <code>
-                        &lt;widget-box&gt;<br>
-                        &emsp;&emsp;&lt;lazy-load&gt;<br>
-                        &emsp;&emsp; &emsp;&emsp; &lt;template&gt; ... &lt;/template&gt;<br>
-                        &emsp;&emsp; &lt;/lazy-load&gt;<br>
-                        &lt;/widget-box&gt;
-                    </code>
-                </li>
-
-                <li>
-                    Подключить скрипт<br>
-
-                    <div class="widget-box">
-                        <button class="btn-copy">Скопировать код</button>
-
-                        <pre>
-                            <code>@@include('../../js/src/lazyload.js')</code>
-                        </pre>
-
-                        <template>@@include('../../js/src/lazyload.js')</template>
-                    </div>
-                </li>
+                <li>В меню слева выбрать виджет.</li>
+                <li>Навести курсором на нужный виджет и нажать "Скопировать код".</li>
+                <li>В стилях прописать для класса .widget-box {width: 100%; height: 500px;}.</li>
+                <li>Всё.</li>
             </ol>
         </div>
     </div>
